@@ -47,7 +47,7 @@
         <!--Counter-->
         <scene sceneID="ncj-nA-IEJ">
             <objects>
-                <viewController id="JHV-kP-wym" sceneMemberID="viewController">
+                <viewController id="JHV-kP-wym" customClass="CounterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CSC-Gg-3LC"/>
                         <viewControllerLayoutGuide type="bottom" id="SrF-Cy-9x6"/>
@@ -63,6 +63,9 @@
                                     <constraint firstAttribute="width" constant="80" id="IYu-SS-XPj"/>
                                 </constraints>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startPressed" destination="JHV-kP-wym" eventType="touchUpInside" id="QhG-Rv-ZQh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQp-7R-EG8">
                                 <rect key="frame" x="60" y="250" width="80" height="80"/>
@@ -71,6 +74,9 @@
                                     <constraint firstAttribute="width" secondItem="TQp-7R-EG8" secondAttribute="height" multiplier="1:1" id="l1r-7p-Cg8"/>
                                 </constraints>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelPressed" destination="JHV-kP-wym" eventType="touchUpInside" id="NvS-s5-uai"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="014-bX-Q22">
                                 <rect key="frame" x="20" y="411" width="280" height="50"/>
@@ -107,6 +113,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Counter" id="yZp-i8-RD5"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="TQp-7R-EG8" id="Ijn-Vu-KoM"/>
+                        <outlet property="startButton" destination="em6-Q4-bIf" id="CCy-GJ-MDh"/>
+                        <outlet property="timerLabel" destination="XS5-cd-dRI" id="NCN-DH-ogP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58S-mW-t6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,7 +126,7 @@
         <!--Counts-->
         <scene sceneID="lyU-mk-UgX">
             <objects>
-                <viewController id="tQi-io-1yv" sceneMemberID="viewController">
+                <viewController id="tQi-io-1yv" customClass="TotalCountViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GIR-pZ-cRC"/>
                         <viewControllerLayoutGuide type="bottom" id="pgB-Go-EK3"/>
