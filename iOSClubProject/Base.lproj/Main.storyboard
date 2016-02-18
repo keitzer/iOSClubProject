@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Item 2-->
@@ -55,15 +56,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="014-bX-Q22">
-                                <rect key="frame" x="137" y="442" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="em6-Q4-bIf">
+                                <rect key="frame" x="180" y="250" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="em6-Q4-bIf" secondAttribute="height" multiplier="1:1" id="5u7-6K-mjt"/>
+                                    <constraint firstAttribute="width" constant="80" id="IYu-SS-XPj"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQp-7R-EG8">
+                                <rect key="frame" x="60" y="250" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="fnY-hi-vkP"/>
+                                    <constraint firstAttribute="width" secondItem="TQp-7R-EG8" secondAttribute="height" multiplier="1:1" id="l1r-7p-Cg8"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="014-bX-Q22">
+                                <rect key="frame" x="20" y="411" width="280" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0kH-cQ-gSS"/>
+                                    <constraint firstAttribute="width" constant="280" id="IGV-ZE-6df"/>
+                                </constraints>
+                                <state key="normal" title="View Counts &gt;"/>
                                 <connections>
                                     <segue destination="tQi-io-1yv" kind="show" id="mHx-Vp-B2r"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XS5-cd-dRI">
+                                <rect key="frame" x="60" y="148" width="200" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="D9R-U3-CQv"/>
+                                    <constraint firstAttribute="height" constant="63" id="UMH-6K-vkn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XS5-cd-dRI" firstAttribute="top" secondItem="CSC-Gg-3LC" secondAttribute="bottom" constant="84" id="1U2-vN-i0b"/>
+                            <constraint firstItem="014-bX-Q22" firstAttribute="centerX" secondItem="8g5-Ks-geN" secondAttribute="centerX" id="A3x-9s-UxP"/>
+                            <constraint firstItem="XS5-cd-dRI" firstAttribute="centerX" secondItem="TQp-7R-EG8" secondAttribute="centerX" constant="60" id="GlD-Hw-NdQ"/>
+                            <constraint firstItem="SrF-Cy-9x6" firstAttribute="top" secondItem="014-bX-Q22" secondAttribute="bottom" constant="58" id="c1O-Mg-ZDk"/>
+                            <constraint firstItem="XS5-cd-dRI" firstAttribute="centerX" secondItem="8g5-Ks-geN" secondAttribute="centerX" id="clp-rp-2J4"/>
+                            <constraint firstItem="em6-Q4-bIf" firstAttribute="top" secondItem="XS5-cd-dRI" secondAttribute="bottom" constant="39" id="l3S-ND-DXO"/>
+                            <constraint firstItem="TQp-7R-EG8" firstAttribute="top" secondItem="XS5-cd-dRI" secondAttribute="bottom" constant="39" id="mH4-QX-MFq"/>
+                            <constraint firstItem="em6-Q4-bIf" firstAttribute="centerX" secondItem="XS5-cd-dRI" secondAttribute="centerX" constant="60" id="w7H-M8-tcG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Counter" id="yZp-i8-RD5"/>
                 </viewController>
@@ -82,7 +123,41 @@
                     <view key="view" contentMode="scaleToFill" id="WcW-Kc-0oP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXx-aH-Zgs">
+                                <rect key="frame" x="60" y="244" width="200" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="njy-oK-NS9"/>
+                                    <constraint firstAttribute="height" constant="80" id="tYr-Pv-M39"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dt4-HM-k2Q">
+                                <rect key="frame" x="60" y="323" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6SR-yX-fEd"/>
+                                    <constraint firstAttribute="width" constant="200" id="bOz-hh-187"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dt4-HM-k2Q" firstAttribute="top" secondItem="oXx-aH-Zgs" secondAttribute="bottom" constant="-1" id="bzB-6e-mZL"/>
+                            <constraint firstItem="oXx-aH-Zgs" firstAttribute="centerY" secondItem="WcW-Kc-0oP" secondAttribute="centerY" id="m3V-eQ-qnr"/>
+                            <constraint firstItem="Dt4-HM-k2Q" firstAttribute="centerX" secondItem="oXx-aH-Zgs" secondAttribute="centerX" id="nXg-jz-m80"/>
+                            <constraint firstItem="oXx-aH-Zgs" firstAttribute="top" secondItem="GIR-pZ-cRC" secondAttribute="bottom" constant="52" id="qh6-za-Tjt"/>
+                            <constraint firstItem="oXx-aH-Zgs" firstAttribute="centerX" secondItem="WcW-Kc-0oP" secondAttribute="centerX" id="xAc-DD-0bb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qh6-za-Tjt"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Counts" id="cDb-02-Hmq"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

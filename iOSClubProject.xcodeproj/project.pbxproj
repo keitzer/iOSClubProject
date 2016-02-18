@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE7A49C21C754F7900C691CD /* CounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7A49C11C754F7900C691CD /* CounterViewController.m */; };
+		FE7A49C51C754F8500C691CD /* TotalCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7A49C41C754F8500C691CD /* TotalCountViewController.m */; };
 		FEC676921C753CBD00AECA01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC676911C753CBD00AECA01 /* main.m */; };
 		FEC676951C753CBD00AECA01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC676941C753CBD00AECA01 /* AppDelegate.m */; };
 		FEC676981C753CBD00AECA01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC676971C753CBD00AECA01 /* ViewController.m */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE7A49C01C754F7900C691CD /* CounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterViewController.h; sourceTree = "<group>"; };
+		FE7A49C11C754F7900C691CD /* CounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterViewController.m; sourceTree = "<group>"; };
+		FE7A49C31C754F8500C691CD /* TotalCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalCountViewController.h; sourceTree = "<group>"; };
+		FE7A49C41C754F8500C691CD /* TotalCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotalCountViewController.m; sourceTree = "<group>"; };
 		FEC6768D1C753CBD00AECA01 /* iOSClubProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSClubProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC676911C753CBD00AECA01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEC676931C753CBD00AECA01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +69,10 @@
 				FEC676961C753CBD00AECA01 /* ViewController.h */,
 				FEC676971C753CBD00AECA01 /* ViewController.m */,
 				FEC676991C753CBD00AECA01 /* Main.storyboard */,
+				FE7A49C01C754F7900C691CD /* CounterViewController.h */,
+				FE7A49C11C754F7900C691CD /* CounterViewController.m */,
+				FE7A49C31C754F8500C691CD /* TotalCountViewController.h */,
+				FE7A49C41C754F8500C691CD /* TotalCountViewController.m */,
 				FEC6769C1C753CBD00AECA01 /* Assets.xcassets */,
 				FEC6769E1C753CBD00AECA01 /* LaunchScreen.storyboard */,
 				FEC676A11C753CBD00AECA01 /* Info.plist */,
@@ -149,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7A49C51C754F8500C691CD /* TotalCountViewController.m in Sources */,
 				FEC676981C753CBD00AECA01 /* ViewController.m in Sources */,
+				FE7A49C21C754F7900C691CD /* CounterViewController.m in Sources */,
 				FEC676951C753CBD00AECA01 /* AppDelegate.m in Sources */,
 				FEC676921C753CBD00AECA01 /* main.m in Sources */,
 			);
@@ -300,6 +312,7 @@
 				FEC676A61C753CBD00AECA01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
