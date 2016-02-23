@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FE7A49C21C754F7900C691CD /* CounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7A49C11C754F7900C691CD /* CounterViewController.m */; };
 		FE7A49C51C754F8500C691CD /* TotalCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7A49C41C754F8500C691CD /* TotalCountViewController.m */; };
+		FE7A49CB1C7BD76400C691CD /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7A49CA1C7BD76400C691CD /* iTunesArtwork@2x.png */; };
 		FEC676921C753CBD00AECA01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC676911C753CBD00AECA01 /* main.m */; };
 		FEC676951C753CBD00AECA01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC676941C753CBD00AECA01 /* AppDelegate.m */; };
 		FEC676981C753CBD00AECA01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC676971C753CBD00AECA01 /* ViewController.m */; };
@@ -22,6 +23,7 @@
 		FE7A49C11C754F7900C691CD /* CounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterViewController.m; sourceTree = "<group>"; };
 		FE7A49C31C754F8500C691CD /* TotalCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalCountViewController.h; sourceTree = "<group>"; };
 		FE7A49C41C754F8500C691CD /* TotalCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotalCountViewController.m; sourceTree = "<group>"; };
+		FE7A49CA1C7BD76400C691CD /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		FEC6768D1C753CBD00AECA01 /* iOSClubProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSClubProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC676911C753CBD00AECA01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEC676931C753CBD00AECA01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				FE7A49C31C754F8500C691CD /* TotalCountViewController.h */,
 				FE7A49C41C754F8500C691CD /* TotalCountViewController.m */,
 				FEC6769C1C753CBD00AECA01 /* Assets.xcassets */,
+				FE7A49CA1C7BD76400C691CD /* iTunesArtwork@2x.png */,
 				FEC6769E1C753CBD00AECA01 /* LaunchScreen.storyboard */,
 				FEC676A11C753CBD00AECA01 /* Info.plist */,
 				FEC676901C753CBD00AECA01 /* Supporting Files */,
@@ -149,6 +152,7 @@
 				FEC676A01C753CBD00AECA01 /* LaunchScreen.storyboard in Resources */,
 				FEC6769D1C753CBD00AECA01 /* Assets.xcassets in Resources */,
 				FEC6769B1C753CBD00AECA01 /* Main.storyboard in Resources */,
+				FE7A49CB1C7BD76400C691CD /* iTunesArtwork@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
