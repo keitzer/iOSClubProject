@@ -4,12 +4,13 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Balance-->
         <scene sceneID="IDG-0K-lqU">
             <objects>
-                <viewController id="YQ3-o6-rXB" sceneMemberID="viewController">
+                <viewController id="YQ3-o6-rXB" customClass="BalanceViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sc3-FT-eqs"/>
                         <viewControllerLayoutGuide type="bottom" id="jV5-Cm-CLQ"/>
@@ -17,9 +18,41 @@
                     <view key="view" contentMode="scaleToFill" id="hS3-dt-4Nv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="lbz-2A-pTj">
+                                <rect key="frame" x="204" y="234" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="KCz-U9-6Bk"/>
+                                    <constraint firstAttribute="width" secondItem="lbz-2A-pTj" secondAttribute="height" multiplier="1:1" id="vEz-WH-Ltq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_left" translatesAutoresizingMaskIntoConstraints="NO" id="gbf-C1-ALH">
+                                <rect key="frame" x="16" y="234" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YWY-af-4nk"/>
+                                    <constraint firstAttribute="width" secondItem="gbf-C1-ALH" secondAttribute="height" multiplier="1:1" id="cih-4U-HIS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gbf-C1-ALH" firstAttribute="centerX" secondItem="hS3-dt-4Nv" secondAttribute="centerX" id="0x8-Ag-96I"/>
+                            <constraint firstItem="gbf-C1-ALH" firstAttribute="centerY" secondItem="hS3-dt-4Nv" secondAttribute="centerY" id="6hM-Wi-xUr"/>
+                            <constraint firstItem="gbf-C1-ALH" firstAttribute="leading" secondItem="hS3-dt-4Nv" secondAttribute="leadingMargin" id="Ejb-tx-EMs"/>
+                            <constraint firstItem="lbz-2A-pTj" firstAttribute="trailing" secondItem="hS3-dt-4Nv" secondAttribute="trailingMargin" id="pBQ-Ft-N7z"/>
+                            <constraint firstItem="lbz-2A-pTj" firstAttribute="centerY" secondItem="hS3-dt-4Nv" secondAttribute="centerY" id="weH-VV-K5P"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0x8-Ag-96I"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="osq-fW-aP6"/>
+                    <tabBarItem key="tabBarItem" title="Balance" id="osq-fW-aP6"/>
+                    <connections>
+                        <outlet property="leftArrowImageView" destination="gbf-C1-ALH" id="Klg-Do-b86"/>
+                        <outlet property="rightArrowImageView" destination="lbz-2A-pTj" id="Boi-3I-j05"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOp-Sn-ePC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -217,4 +250,8 @@
             <point key="canvasLocation" x="-948" y="585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow_left" width="100" height="100"/>
+        <image name="arrow_right" width="100" height="100"/>
+    </resources>
 </document>
