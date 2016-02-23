@@ -26,6 +26,13 @@
                                     <constraint firstAttribute="width" secondItem="lbz-2A-pTj" secondAttribute="height" multiplier="1:1" id="vEz-WH-Ltq"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="JGe-NK-jQQ">
+                                <rect key="frame" x="110" y="234" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JGe-NK-jQQ" secondAttribute="height" multiplier="1:1" id="3PM-Fi-M7x"/>
+                                    <constraint firstAttribute="width" constant="100" id="slV-3K-WJQ"/>
+                                </constraints>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_left" translatesAutoresizingMaskIntoConstraints="NO" id="gbf-C1-ALH">
                                 <rect key="frame" x="16" y="234" width="100" height="100"/>
                                 <constraints>
@@ -33,14 +40,29 @@
                                     <constraint firstAttribute="width" secondItem="gbf-C1-ALH" secondAttribute="height" multiplier="1:1" id="cih-4U-HIS"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqq-2b-jvA">
+                                <rect key="frame" x="10" y="364" width="300" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="39z-N2-cF7"/>
+                                    <constraint firstAttribute="height" constant="67" id="P1J-YL-LzZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gbf-C1-ALH" firstAttribute="centerX" secondItem="hS3-dt-4Nv" secondAttribute="centerX" id="0x8-Ag-96I"/>
                             <constraint firstItem="gbf-C1-ALH" firstAttribute="centerY" secondItem="hS3-dt-4Nv" secondAttribute="centerY" id="6hM-Wi-xUr"/>
+                            <constraint firstItem="wqq-2b-jvA" firstAttribute="top" secondItem="JGe-NK-jQQ" secondAttribute="bottom" constant="30" id="9nF-PJ-Vai"/>
                             <constraint firstItem="gbf-C1-ALH" firstAttribute="leading" secondItem="hS3-dt-4Nv" secondAttribute="leadingMargin" id="Ejb-tx-EMs"/>
+                            <constraint firstItem="wqq-2b-jvA" firstAttribute="centerX" secondItem="hS3-dt-4Nv" secondAttribute="centerX" id="FdF-dk-g9M"/>
+                            <constraint firstItem="JGe-NK-jQQ" firstAttribute="width" secondItem="JGe-NK-jQQ" secondAttribute="height" multiplier="1:1" id="OWb-c0-xhL"/>
+                            <constraint firstItem="JGe-NK-jQQ" firstAttribute="centerX" secondItem="hS3-dt-4Nv" secondAttribute="centerX" id="U5Z-VR-lOW"/>
                             <constraint firstItem="lbz-2A-pTj" firstAttribute="trailing" secondItem="hS3-dt-4Nv" secondAttribute="trailingMargin" id="pBQ-Ft-N7z"/>
                             <constraint firstItem="lbz-2A-pTj" firstAttribute="centerY" secondItem="hS3-dt-4Nv" secondAttribute="centerY" id="weH-VV-K5P"/>
+                            <constraint firstItem="JGe-NK-jQQ" firstAttribute="centerY" secondItem="hS3-dt-4Nv" secondAttribute="centerY" id="yZ2-Ak-51k"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -50,8 +72,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Balance" id="osq-fW-aP6"/>
                     <connections>
+                        <outlet property="handImageView" destination="JGe-NK-jQQ" id="N4c-EW-wY0"/>
                         <outlet property="leftArrowImageView" destination="gbf-C1-ALH" id="Klg-Do-b86"/>
                         <outlet property="rightArrowImageView" destination="lbz-2A-pTj" id="Boi-3I-j05"/>
+                        <outlet property="timerLabel" destination="wqq-2b-jvA" id="rEr-gi-XMK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOp-Sn-ePC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -253,5 +277,6 @@
     <resources>
         <image name="arrow_left" width="100" height="100"/>
         <image name="arrow_right" width="100" height="100"/>
+        <image name="hand" width="100" height="100"/>
     </resources>
 </document>

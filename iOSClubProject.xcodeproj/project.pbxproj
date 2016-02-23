@@ -11,6 +11,7 @@
 		FE7A49C51C754F8500C691CD /* TotalCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7A49C41C754F8500C691CD /* TotalCountViewController.m */; };
 		FE7A49CB1C7BD76400C691CD /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7A49CA1C7BD76400C691CD /* iTunesArtwork@2x.png */; };
 		FE7A49CF1C7BDC6900C691CD /* BalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7A49CE1C7BDC6900C691CD /* BalanceViewController.m */; };
+		FE7A49D21C7BE08600C691CD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7A49D11C7BE08600C691CD /* CoreMotion.framework */; };
 		FEC676921C753CBD00AECA01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC676911C753CBD00AECA01 /* main.m */; };
 		FEC676951C753CBD00AECA01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC676941C753CBD00AECA01 /* AppDelegate.m */; };
 		FEC676981C753CBD00AECA01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC676971C753CBD00AECA01 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 		FE7A49CA1C7BD76400C691CD /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		FE7A49CD1C7BDC6900C691CD /* BalanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceViewController.h; sourceTree = "<group>"; };
 		FE7A49CE1C7BDC6900C691CD /* BalanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalanceViewController.m; sourceTree = "<group>"; };
+		FE7A49D11C7BE08600C691CD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FEC6768D1C753CBD00AECA01 /* iOSClubProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSClubProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC676911C753CBD00AECA01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEC676931C753CBD00AECA01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7A49D21C7BE08600C691CD /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +76,7 @@
 		FEC676841C753CBD00AECA01 = {
 			isa = PBXGroup;
 			children = (
+				FE7A49D11C7BE08600C691CD /* CoreMotion.framework */,
 				FEC6768F1C753CBD00AECA01 /* iOSClubProject */,
 				FEC6768E1C753CBD00AECA01 /* Products */,
 			);
